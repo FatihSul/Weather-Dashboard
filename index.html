@@ -7,7 +7,7 @@
 <meta name="Description" content="Enter your description here"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="./style.css">
 <title>Weather App</title>
 </head>
 <body class="bg-dark">
@@ -19,14 +19,21 @@
 
 
 
-<!-- today's forcast, large card-->
-<div class="card">
+<div class="weather-container">
+    <div class="search-history">
+        <h1 class="text-light">Input City Name:</h1>
+        <input class="city-name-input" type="text" placeholder="Enter city name">
+        <button class="search-button">Search</button>
+    </div>
+    <div class="weather-data">
+        <!-- today's forcast, large card-->
+<div class="card current-day">
     <div class="card-body">
       <h5 class="card-date">City, date, icon</h5>
-      <p class="card-temp">Temp</p>
-      <p class="card-wind">Wind</p>
-      <p class="card-humidity">Humidity</p>
-      <p class="uv-index">Uv</p>
+      <p class="card-temp">Temp: <span class="current-temp"></span></p>
+      <p class="card-wind">Wind: <span class="current-wind"></span></p>
+      <p class="card-humidity">Humidity: <span class="current-humidity"></span></p>
+      <p class="uv-index">Uv: <span class="current-uv"></span></p>
     </div>
   </div>
 
@@ -75,11 +82,15 @@
         </div>
       </div>
   </div>
+    </div>
+</div>
 
 
 
 
-<script src="/script.js"></script>
+
+
+<script src="./script.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
