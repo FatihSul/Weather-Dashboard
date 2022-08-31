@@ -39,7 +39,7 @@ function futureForcast(lat, lon){
 
 function showWeather(data){
     cardDeck.innerHTML = ""
-    currentUv.innerText = `UV: ${data.daily[0].uvi}`
+    currentUv.innerText = `UV index: ${data.daily[0].uvi}`
 
     for (let i = 1; i < 6; i++) {
         var cardContainer = document.createElement("div")
