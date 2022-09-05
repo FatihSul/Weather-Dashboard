@@ -17,39 +17,37 @@
     <span class="navbar-brand mb-0 h1">Weather Dashboard</span>
 </nav>
 
+
+<!-- input box for city search -->
 <div class="weather-container">
-    <div class="search-history">
-        <h1 class="text-light">Input City Name:</h1>
-        <input class="city-name-input" type="text" placeholder="Enter city name">
-        <button class="search-button">Search</button>
-    </div>
-<div class="weather-data">
+  <div class="search-history">
+    <h1 class="text-light">Input City Name:</h1>
+    <input class="city-name-input" type="text" placeholder="Enter city name">
+    <button class="search-button">Search</button>
+    <div id="searchHistory"></div>
+  </div>
+  <div class="weather-data">
 
 
 
-<!-- today's forcast, large card-->
-    <div class="card current-day">
-      <div class="card-body">
-        <h5 class="card-date"><span class="current-date">Location & Date</span><img class="current-image" src=""></h5>
+  <!-- today's forcast, large card-->
+  <div class="card current-day">
+    <div class="card-body">
+      <h5 class="card-date"><span class="current-date">Location & Date</span><img class="current-image" src=""></h5>
         <p class="card-temp">Temp: <span class="current-temp"></span></p>
         <p class="card-wind">Wind: <span class="current-wind"></span></p>
         <p class="card-humidity">Humidity: <span class="current-humidity"></span></p>
-        <p class="uv-index"><span class="current-uv"></span></p>
-      </div>
+        <p class="uv-index"><span class="current-uv" id="current-uv"></span></p>
     </div>
-
-<!-- future 5-day forcast, smaller cards created in javascript-->
-
-
-<div class="card-deck temp-cards">
-
   </div>
+
+  <!-- future 5-day forcast, smaller cards created in javascript-->
+
+
+    <div class="card-deck temp-cards">
     </div>
+  </div>
 </div>
-
-
-
-
 
 
 <script src="./script.js"></script>
